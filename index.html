@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/img/favicon.ico">
+
+    <title>Spin Up</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="container-fluid" style="background: url('/img/background.jpg'); background-repeat:repeat; width:100%; height: 350px; margin: 0">
+        &nbsp;
+      </div>
+
+    <div class="container-fluid">
+      <div class="row rowcontent">
+        <div class="col-md-offset-1 col-md-4">
+            <img src="/img/spinup.png" alt="SpinUp" /> <br/>
+            <p style="padding-left: 120px; margin-top:-60px;">creates....<br />
+                where... <br />
+                the end.</p>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+            <iframe src="http://www.youtube.com/embed/3YKdLRTh2rg" 
+                webkitallowfullscreen="true" 
+                mozallowfullscreen="true"
+                allowfullscreen="allowfullscreen"
+                frameborder="0"
+                style="width: 100%"
+                height="390px">
+                
+            </iframe>
+        </div>
+      </div>
+
+      <div class="row rowcontent" style="background-color: #0FBC71; color: white">
+        <div class="col-md-offset-1 col-md-4">
+            <h1>Register your interest</h1>
+            <p>Provisional launch of the project: Autumn 2014.</p>
+        </div>
+        <div class="col-md-offset-1 col-md-5">
+            <form class="form-horizontal" role="form" action="https://docs.google.com/forms/d/18-vYsGIqkoHl3DbSfMrj7222bYQwSu5CfXu2Vf9Zlfw/formResponse" method="POST" >
+              <div class="form-group">
+                <!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="name" name="entry.2094620658" placeholder="Name">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" id="email" name="entry.1435554216" placeholder="Email">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="subject" class="col-sm-2 control-label">Password</label> -->
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="subject" name="entry.2004854914" placeholder="Subject">
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- <label for="subject" class="col-sm-2 control-label">Message</label> -->
+                <div class="col-sm-10">
+                  <textarea class="form-control" rows="3" id="message" name="entry.23399016" placeholder="Message"></textarea> 
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="col-sm-10">
+                  <button type="button"  onclick="postContactToGoogle()" class="btn btn-default">Send</button>
+                </div>
+              </div>
+            </form>
+        </div>
+      </div>
+
+      <div class="row rowcontent" style="background-color: #2B2B24; color: white; text-align: center;">
+        <div class="col-md-offset-4 col-md-4">
+            <h1 style="outline: 1px solid white;">Follow us:</h1>
+            <div class="row" style="padding-top: 20px;">
+                <div class="col-sm-4">
+                    <a href="https://www.facebook.com/SpinUpTogether"><img src="/img/facebook.png" alt="facebook" /></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://twitter.com/spinuptogether"><img src="/img/twitter.png" alt="twitter" /></a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="https://plus.google.com/u/0/103175615369993971008/posts/p/pub"><img src="/img/gplus.png" alt="google+" /></a>
+                </div>
+            </div>
+        </div>
+      </div>
+      <footer>
+        <p>&copy; SpinUp 2014. Proudly created in Manchester.</p>
+      </footer>
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-48841821-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+
+     ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+     })();
+  </script>
+
+  <script>
+        function postContactToGoogle() {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var subject = $('#subject').val();
+            var message = $('#message').val();
+
+                $.ajax({
+                    url: "https://docs.google.com/forms/d/18-vYsGIqkoHl3DbSfMrj7222bYQwSu5CfXu2Vf9Zlfw/formResponse",
+                    data: { "entry_2094620658": name, "entry_1435554216": email, "entry_2004854914": subject, "entry_23399016": message },
+                    type: "POST",
+                    dataType: "xml",
+                    statusCode: {
+                        0: function () {
+                            window.location.replace("thankyou.html");
+                        },
+                        200: function () {
+                            window.location.replace("thankyou.html");
+                        }
+                    }
+                });
+        }
+    </script>
+</html>
