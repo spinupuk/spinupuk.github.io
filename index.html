@@ -13,8 +13,9 @@
     <!-- Bootstrap core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
 
+
     <!-- Custom styles for this template -->
-    <link href="css/jumbotron.css" rel="stylesheet">
+<!--     <link href="css/jumbotron.css" rel="stylesheet"> -->
 
     <!-- Just for debugging purposes. Don't actually copy this line! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -24,6 +25,8 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <link href="/css/style.css" rel="stylesheet">
   </head>
 
   <!-- 
@@ -59,25 +62,20 @@
 	-->
 
 	<section id="intro">
-	 	<div class="row rowcontent" style="background-color: #dcf2fc; color: #535b6c; text-align: left;">
-	      <div class="row rowcontent">
-	        <div class="col-md-offset-1 col-md-4">
+      <div class="row" style="background-color: #dcf2fc; color: #535b6c; text-align: center;">
 	            <img src="/img/logo.png" alt="SpinUp" /> <br/>
-	            <p style="padding-left: 120px; margin-top:-60px;">We spin up A-level students<br/>
-	                interested in STEM subjects.</p>
-	        </div>
 	    </div>
 	</section>
 	<section id="about">
 		<br>&nbsp;<br>
-      	<div class="row rowcontent" style="background-color: white; color: #535b6c">
-       		 <div class="col-md-offset-1 col-md-4">
-				<h1>Why we exists</h1>
+      	<div class="row content" style="background-color: white; color: #535b6c; text-align: center;">
+       		 <div class="col-md-6">
+				<h1>Why we exist</h1>
 					<p class="philosophy">
-						Something
+						We spin up A-level students interested in STEM subjects.
 					</p>
 			</div>
-			<div class="col-md-offset-1 col-md-5">
+			<div class="col-md-6">
 				<h1>What we do</h1>
 					<p class="philosophy">
 						Something
@@ -88,49 +86,51 @@
 	</section>
 	<hr>
 	<section id="interest">
-      <div class="row rowcontent" style="background-color: white; color: #535b6c">
-        <div class="col-md-offset-1 col-md-4">
+      <div class="row content" style="background-color: white; color: #535b6c; text-align: center;">
+        <div class="col-md-6">
             <h1>Register your interest</h1>
-            <p>Provisional launch of the first Spin Up weekend for<br/>A-level students in Manchester: November 2015.</p>
+            <p>Provisional launch of the first Spin Up weekend<br>for A-level students in Manchester: November 2015.</p>
         </div>
-        <div class="col-md-offset-1 col-md-5">
-            <form class="form-horizontal" role="form" action="https://docs.google.com/spreadsheets/d/1p8JlW1T9lFtb9Gc0wDJCfnFEYnV8wcZKu-yM4z39jh8/formResponse" method="POST" >
-              <div class="form-group">
-                <!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="name" name="entry.2094620658" placeholder="Name">
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
-                <div class="col-sm-10">
-                  <input type="email" class="form-control" id="email" name="entry.1435554216" placeholder="Email">
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- <label for="subject" class="col-sm-2 control-label">Password</label> -->
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="subject" name="entry.2004854914" placeholder="Subject">
-                </div>
-              </div>
-              <div class="form-group">
-                <!-- <label for="subject" class="col-sm-2 control-label">Message</label> -->
-                <div class="col-sm-10">
-                  <textarea class="form-control" rows="3" id="message" name="entry.23399016" placeholder="Message"></textarea> 
-                </div>
-              </div>
-              <div class="form-group">
-                <div class="col-sm-10">
-                  <button type="button"  onclick="postContactToGoogle()" class="btn btn-default">Send</button>
-                </div>
-              </div>
-            </form>
+        <div class="col-md-6">
+        	<div class="form-interest">
+	            <form class="form-horizontal" role="form" action="https://docs.google.com/forms/d/1YBIINen7CgYN_8eFuLIKQ-CWOhLbQPX8vfSiSQyWFUw/formResponse" method="POST" >
+	              <div class="form-group">
+	                <!-- <label for="name" class="col-sm-2 control-label">Name</label> -->
+	                <div class="col-sm-12		">
+	                  <input type="text" class="form-control" id="name" name="entry.820940184" placeholder="Name">
+	                </div>
+	              </div>
+	              <div class="form-group">
+	                <!-- <label for="email" class="col-sm-2 control-label">Email</label> -->
+	                <div class="col-sm-12">
+	                  <input type="email" class="form-control" id="email" name="entry.1052911846" placeholder="Email">
+	                </div>
+	              </div>
+	              <div class="form-group">
+	                <!-- <label for="subject" class="col-sm-2 control-label">Password</label> -->
+	                <div class="col-sm-12">
+	                  <input type="text" class="form-control" id="subject" name="entry.377433550" placeholder="Subject">
+	                </div>
+	              </div>
+	              <div class="form-group">
+	                <!-- <label for="subject" class="col-sm-2 control-label">Message</label> -->
+	                <div class="col-sm-12">
+	                  <textarea class="form-control" rows="3" id="message" name="entry.451889630" placeholder="Message"></textarea> 
+	                </div>
+	              </div>
+	              <div class="form-group">
+	                <div class="col-sm-12">
+	                  <button type="button"  onclick="postContactToGoogle()" class="btn btn-default">Send</button>
+	                </div>
+	              </div>
+	            </form>
+            </div>
         </div>
       </div>
 	</section>
 	<hr>
 	<section id="organisers">
-		<div class="container align-center" style="background-color: white; color: #535b6c">
+		<div class="container align-center" style="background-color: white; color: #535b6c; text-align: center;">
 			<h1>Created by students for students</h1>
 			<br>&nbsp;<br>
 			<div class="row">
@@ -175,7 +175,7 @@
 		<br>&nbsp;<br>
 	</section>
    	<section id="follow">
-      <div class="row rowcontent" style="background-color: #dcf2fc; color: #535b6c; text-align: center;">
+      <div class="row content" style="background-color: #dcf2fc; color: #535b6c; text-align: center; padding-bottom: 50px;">
         <div class="col-md-offset-4 col-md-4">
             <h1>Follow us:</h1>
             <div class="row" style="padding-top: 20px;">
@@ -193,8 +193,12 @@
       </div>
 	</section>
       <footer>
+      	<div class="content">
+      	<div class="row">
       	<div class="col-sm-4 spacing-xs align-xs-left">
         	<p>	&copy; Spin Up 2015</p>
+        </div>
+        </div>
         </div>
       </footer>
     </div> <!-- /container -->
@@ -207,17 +211,15 @@
     <script src="/js/bootstrap.min.js"></script>
   </body>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-48841821-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; 
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-     ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+  ga('create', 'UA-66528511-1', 'auto');
+  ga('send', 'pageview');
 
-     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
   </script>
 
   <script>
@@ -227,20 +229,21 @@
             var subject = $('#subject').val();
             var message = $('#message').val();
 
-                $.ajax({
-                    url: "https://docs.google.com/forms/d/18-vYsGIqkoHl3DbSfMrj7222bYQwSu5CfXu2Vf9Zlfw/formResponse",
-                    data: { "entry_2094620658": name, "entry_1435554216": email, "entry_2004854914": subject, "entry_23399016": message },
+            var request = $.ajax({
+                    url: "https://docs.google.com/forms/d/1YBIINen7CgYN_8eFuLIKQ-CWOhLbQPX8vfSiSQyWFUw/formResponse",
+                    data: { "entry_820940184": name, "entry_1052911846": email, "entry_377433550": subject, "entry_451889630": message },
                     type: "POST",
                     dataType: "xml",
-                    statusCode: {
-                        0: function () {
-                            window.location.replace("thankyou.html");
-                        },
-                        200: function () {
-                            window.location.replace("thankyou.html");
-                        }
-                    }
-                });
+            });
+
+            request.done(function() {
+            	window.location.replace("thankyou.html");
+            });
+
+            request.fail(function(err) {
+            	window.location.replace("thankyou.html");
+            });
+            
         }
     </script>
 </html>
